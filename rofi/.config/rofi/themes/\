@@ -1,0 +1,117 @@
+/* 1. Definições Globais: Onde você guarda suas variáveis (Cores e Fontes) */
+* {
+    bg-color:      #181616;
+    bgD-color:     #090618;
+    fg-color:      #c5c9c5;
+    fujigray:      #7a8382;
+    autummGreen:   #8a9a7b;
+    accent-color:  #8ba4b1;
+    urgent-color:  #c4746e;
+    cristalBlue:   #8ba4b0;
+    aniviolet:     #8992a7;
+    amarelo:       #c4b28a;
+    font: "JetBrainsMono Nerd Font 14";
+}
+
+/* 2. Window: A janela principal que envolve tudo */
+window {
+    width:            25%;         /* Largura da janela */
+    height:           65%;         /* Altura da janela */
+    background-color: transparent;
+    border:           1px;         /* Espessura da borda externa */
+    border-radius:    8px;        /* Arredondamento dos cantos */
+    padding:          0px;        /* Espaço interno entre borda e conteúdo */
+}
+
+/* 3. Mainbox: O container vertical que organiza o Inputbar e o Listview */
+mainbox {
+    spacing:          0px;        /* Espaço entre a barra de busca e a lista */
+    children:         [ inputbar, listview, mode-switcher ];
+}
+
+/* 4. Inputbar: A área onde você digita a busca */
+inputbar {
+    enabled:          true;
+    children:         [ entry ]; /* Ordem: Ícone/Texto -> Campo de digitação */
+}
+
+/* 5. Prompt: O título ou ícone que fica antes da caixa de texto */
+prompt {
+    background-color: @accent-color;
+    text-color:       @bg-color;
+    padding:          6px 12px;
+    border-radius:    6px;
+}
+
+/* 6. Entry: Onde o texto que você digita aparece */
+entry {
+    placeholder:      "...";
+    placeholder-color: @fujigray;
+    padding:          8px;
+    color: white;
+    background-color: @bg-color;
+}
+
+entry normal {
+    color: white;
+}
+
+/* 7. Listview: O container que exibe os resultados (lista de itens) */
+listview {
+    columns:          1;           /* Quantidade de colunas (use 2 para grid) */
+    lines:            8;           /* Quantidade de linhas visíveis */
+    cycle:            true;        /* Se volta ao topo ao chegar no fim */
+    dynamic:          true;        /* Ajusta o tamanho conforme os resultados */
+    scrollbar:        false;       /* Mostrar ou não a barra de rolagem */
+    layout:           vertical;    /* Disposição dos itens */
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* 8. Element: Cada item individual dentro da lista */
+element {
+    padding:          5px;
+    spacing:          5px;        /* Espaço entre ícone e texto do item */
+    border-radius:    0px;
+    background-color: transparent;
+}
+
+/* 9. Element States: O que acontece quando você seleciona um item */
+element normal.normal {
+    text-color:       @fg-color;
+}
+
+element selected.normal {
+    background-color: @accent-color;
+    text-color:       @bg-color;
+}
+
+/* 10. Element Icon & Text: Estilo específico para o ícone e o texto do app */
+element-icon {
+    size:             30px;        /* Tamanho do ícone do aplicativo */ 
+    background-color: transparent;
+}
+
+element-text {
+    vertical-align:   0.5;         /* Alinhamento vertical do texto */ 
+    background-color: transparent;
+    color: white;
+}
+
+/* 11. Mode Switcher: A barra de navegação (se você usa vários modi como run, drun) */
+mode-switcher {
+    spacing:          0px;
+}
+
+button {
+    padding:          0px;
+    background-color: @bg-color;
+    text-color:       @fg-color;
+    vertical-align:   0.5; 
+    horizontal-align: 0.5;
+}
+
+button selected {
+  background-color: @accent-color;
+  text-color:       @bg-color;
+}
+

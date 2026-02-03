@@ -1,0 +1,219 @@
+{
+  "height": 2,
+  //"margin": 5;
+  "spacing":0,
+
+  "modules-left": [
+    "hyprland/workspaces",
+    // "group/control",
+    "hyprland/window",
+  ],
+
+  "modules-center": [
+    "clock",
+  ],
+
+  "modules-right": [
+    "tray",
+    "group/hardware"
+  ],
+
+// Configs individuais
+  
+  "group/hardware": {
+    "type": "group",
+    "orientation": "horizontal",
+    "modules": [
+      "bluetooth", 
+      "custom/separator", 
+      "backlight",
+      "custom/separator", 
+      "battery",
+      "custom/separator", 
+      "pulseaudio",
+      "custom/separator", 
+      "network",
+      "custom/separator", 
+      "custom/power"
+    ]
+  },
+
+  "group/control": {
+    "type": "group",
+    "orientation": "horizontal",
+    "modules": [
+      "cpu",
+      "custom/separator",
+      "memory",
+      "custom/separator",
+      "temperature",
+      "custom/separator",
+      "disk"
+    ]
+  },
+
+
+  "hyprland/workspaces": {
+    "format": "{}",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1"
+  },
+
+  "custom/pacman": {
+    "format": "| 󰑓 {} ",
+    "interval": 3600,
+    "exec": "checkupdates | wc -l", 
+    "exec-if": "exit 1", 
+    "on-click": "kitty -e sudo pacman -Syu; pkill -RTMIN+16 waybar", 
+    "signal": 16,
+    "tooltip": false
+  },
+
+  "custom/power": {
+    "format": " ",
+    "on-click": "nwg-bar"
+  },
+  
+  "cpu": {
+    "interval": 10,
+    "format": "  {usage}%",
+    "tooltip": true,
+    "on-click": "kitty -e htop" // Abre o monitor de processos ao clicar
+    },
+
+    "memory": {
+        "interval": 30,
+        "format-alt": "󰑭 {used:0.1f}G",
+        "format": "󰑭 {percentage}%",
+        "tooltip-format": "Memória: {used:0.1f}GB / {total:0.1f}GB\nUsado: {percentage}%",
+        "on-click-right": "kitty -e btop"
+    },
+
+    "temperature": {
+        "thermal-zone": 0, // Pode variar (0, 1 ou 2) dependendo do seu hardware
+        "critical-threshold": 80,
+        "format-critical": "  {temperatureC}°C ",
+        "format": "  {temperatureC}°C "
+    },
+
+    "disk": {
+        "interval": 300,
+        "format": " 󰋊 {percentage_used}% ",
+        "path": "/home/",
+        "tooltip-format": "{used} usados de {total} em {path}",
+    },
+
+  "pulseaudio": {
+    // "scroll-step": 1, // %, quanto o volume aumenta/diminui por scroll
+    "format": "{icon}{volume}%",
+    "format-muted": "󰝟 ",
+    "format-icons": {
+        "default": [
+            "󰝟 ",
+            "󰕿 ",
+            "󰖀 ",
+            "󰖀 ",
+            "󰕾 ",
+            "󰕾 ",
+            "󰕾 " 
+        ]
+    },
+    "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+    "on-click": "kitty -e wiremix", // Abre o mixer de áudio ao clicar
+    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle", // Muta a saída no clique direito
+    "tooltip": true,
+    "tooltip-format": "Dispositivo: {desc}"
+    },
+  
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "active-only": false,
+    "on-click": "activate",
+    "format": "{}",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    },
+
+  "hyprland/window": {
+    "format": "{}",
+    "separate-outputs": true,
+    "max-length": 30,
+  },
+
+  "backlight": {
+    "device": "intel_backlight", // Verifique o nome em /sys/class/backlight/
+    "format": "{icon}",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "on-scroll-up": "brightnessctl set 1%+",
+    "on-scroll-down": "brightnessctl set 1%-",
+    "tooltip": true,
+    "tooltip-format": "brilho: {}%",
+    "smooth-scrolling-threshold": 1
+    },
+
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+      },
+    "format": "{capacity}% {icon}",
+      "format-charging": "{capacity}% 󱐋",
+      "format-plugged": "{capacity}% ",
+      "tooltip": false,
+      // Ajuste os ícones conforme sua fonte (ex: JetBrainsMono Nerd Font)
+      "format-icons": [" ", " ", " ", " ", " "],
+    },
+
+  "bluetooth": {
+    "format": "",
+    "format-disabled": "󰂲", // Ícone de bluetooth desligado/desabilitado
+    "format-off": "󰂲",      // Garante a exibição caso o status mude para off
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} conectado(s)",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} conectado(s)\n\n---------------------------------------------\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address} {device_battery_percentage}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+    "on-click": "kitty -e bluetui"
+    },
+
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "\uf0e8 ",
+    "format-disconnected": "\uf06a Offline",
+    "format-icons": {
+      "wifi": ["󰤯 ","󰤟 ","󰤢 ", "󰤥 ", "󰤨 "],
+      "ethernet": "",
+      "disconnected": "❌"
+    },
+    "tooltip-format": "{ifname}",
+    "tooltip-format-wifi": "Wi-Fi: {essid} {icon} ({signalStrength}%)\nDownload: ⬇ {bandwidthDownBits} | Upload: ⬆ {bandwidthUpBits}\nIP: {ipaddr}",
+    "tooltip-format-ethernet": "Ethernet\nIP: {ipaddr}",
+    "interval": 5,
+    "on-click": "kitty -e impala" // Abre gerenciador de rede ao clicar
+    },
+ 
+  "clock": {
+    "locale": "C",
+    "format": "{:%H:%M %p | %a %d/%b}",
+    //"format-alt": "{:%a %d/%b}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n\n<tt><big>{calendar}</big></tt>",
+    "interval": "0"
+    },
+
+  "custom/separator": {
+    "format": "|",
+    "color": "#444444",
+    "interval": "once",
+    "tooltip": false
+  },
+
+  "tray": {
+    "format": "{icon}",
+    "icon-size": 16,
+    "spacing": 10
+  },
+
+}

@@ -1,0 +1,62 @@
+/* Configuração inspirada no Walker / Omarchy */
+* {
+    bg-color:      #181616f2; /* Um pouco de transparência (Alpha) */
+    bg-alt:        #2a2a2a;
+    fg-color:      #c5c9c5;
+    accent-color:  #8ba4b1;
+    font: "JetBrainsMono Nerd Font 11";
+}
+
+window {
+    width:            35%; /* Walker é mais estreito */
+    transparency:     "real";
+    background-color: transparent;
+}
+
+mainbox {
+    background-color: @bg-color;
+    border:           2px;
+    border-color:     @accent-color;
+    border-radius:    12px;
+    children:         [ inputbar, listview ];
+    padding:          15px;
+}
+
+inputbar {
+    children:         [ entry ];
+    padding:          10px;
+    background-color: @bg-alt;
+    border-radius:    8px;
+    margin:           0px 0px 10px 0px;
+}
+
+entry {
+    placeholder:       "Search...";
+    placeholder-color: #585b70;
+    text-color:        @fg-color;
+}
+
+listview {
+    columns:      1; /* Walker usa lista única */
+    lines:        8;
+    fixed-height: false;
+    background-color: transparent;
+    spacing:      4px;
+}
+
+element {
+    padding:          8px;
+    border-radius:    6px;
+    background-color: transparent;
+    text-color:       @fg-color;
+}
+
+element selected {
+    background-color: @accent-color;
+    text-color:       #181616;
+}
+
+element-icon {
+    size: 24px;
+    margin: 0 10px 0 0;
+}

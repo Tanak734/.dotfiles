@@ -1,0 +1,253 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260201_101309
+====================================================================================================
+
+1061  |Info:    [ResourceManager] Initializing HID interfaces: Success
+1061  |Info:    ------------------------------------------------------
+1061  |Info:    |               Start device detection               |
+1061  |Info:    ------------------------------------------------------
+1075  |Info:    ------------------------------------------------------
+1076  |Info:    |             Detecting I2C interfaces               |
+1076  |Info:    ------------------------------------------------------
+1076  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 1022:790B Subsystem: 1025:151E
+1076  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1002:1638 Subsystem: 1025:151E
+1076  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1076  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+1076  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:1F9D Subsystem: 1025:151E
+1076  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 1022:790B Subsystem: 1025:151E
+1076  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1076  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 0000:0000 Subsystem: 0000:0000
+1076  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+1076  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ELAN050A:00 Device 0000:0000 Subsystem: 0000:0000
+1076  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:1F9D Subsystem: 1025:151E
+1076  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 1022:790B Subsystem: 1025:151E
+1076  |Info:    ------------------------------------------------------
+1076  |Info:    |               Detecting I2C devices                |
+1076  |Info:    ------------------------------------------------------
+2159  |Info:    ------------------------------------------------------
+2159  |Info:    |            Detecting I2C DIMM modules              |
+2159  |Info:    ------------------------------------------------------
+2551  |Info:    [ResourceManager] Detected occupied slot 1, bus 0, type DDR4
+3202  |Info:    [ResourceManager] Detected occupied slot 2, bus 0, type DDR4
+3896  |Info:    [ResourceManager] Detected occupied slot 1, bus 9, type FPM
+4025  |Info:    [ResourceManager] Detected occupied slot 2, bus 9, type FPM
+4025  |Info:    ------------------------------------------------------
+4025  |Info:    |               Detecting I2C PCI devices            |
+4025  |Info:    ------------------------------------------------------
+4026  |Info:    ------------------------------------------------------
+4026  |Info:    |               Detecting HID devices                |
+4026  |Info:    ------------------------------------------------------
+4056  |Info:    [Razer Deathadder V2] Registering RGB controller
+4109  |Info:    [Corsair K65 Mini] Registering RGB controller
+4109  |Info:    ------------------------------------------------------
+4109  |Info:    |            Detecting libusb HID devices            |
+4109  |Info:    ------------------------------------------------------
+4176  |Info:    ------------------------------------------------------
+4176  |Info:    |              Detecting other devices               |
+4176  |Info:    ------------------------------------------------------
+4217  |Info:    [ResourceManager] Calling Post-detection callbacks
+4217  |Info:    ------------------------------------------------------
+4217  |Info:    |                Detection completed                 |
+4217  |Info:    ------------------------------------------------------
+4217  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+3995326|Info:    [NetworkServer] Network connection thread started on port 6742
+3995626|Info:    [NetworkServer] Network server started
+3995674|Info:    [NetworkServer] Network server started
+4003197|Info:    [ResourceManager] Initializing HID interfaces: Success
+4003197|Info:    ------------------------------------------------------
+4003197|Info:    |               Start device detection               |
+4003197|Info:    ------------------------------------------------------
+4003211|Info:    ------------------------------------------------------
+4003211|Info:    |             Detecting I2C interfaces               |
+4003211|Info:    ------------------------------------------------------
+4003211|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 1022:790B Subsystem: 1025:151E
+4003211|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1002:1638 Subsystem: 1025:151E
+4003211|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+4003211|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+4003211|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:1F9D Subsystem: 1025:151E
+4003212|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 1022:790B Subsystem: 1025:151E
+4003212|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+4003212|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 0000:0000 Subsystem: 0000:0000
+4003212|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+4003212|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ELAN050A:00 Device 0000:0000 Subsystem: 0000:0000
+4003212|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:1F9D Subsystem: 1025:151E
+4003212|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 1022:790B Subsystem: 1025:151E
+4003212|Info:    ------------------------------------------------------
+4003212|Info:    |               Detecting I2C devices                |
+4003212|Info:    ------------------------------------------------------
+4004289|Info:    ------------------------------------------------------
+4004289|Info:    |            Detecting I2C DIMM modules              |
+4004289|Info:    ------------------------------------------------------
+4004677|Info:    [ResourceManager] Detected occupied slot 1, bus 0, type DDR4
+4005323|Info:    [ResourceManager] Detected occupied slot 2, bus 0, type DDR4
+4006013|Info:    [ResourceManager] Detected occupied slot 1, bus 9, type FPM
+4006142|Info:    [ResourceManager] Detected occupied slot 2, bus 9, type FPM
+4006142|Info:    ------------------------------------------------------
+4006142|Info:    |               Detecting I2C PCI devices            |
+4006142|Info:    ------------------------------------------------------
+4006145|Info:    ------------------------------------------------------
+4006145|Info:    |               Detecting HID devices                |
+4006145|Info:    ------------------------------------------------------
+4006176|Info:    [Razer Deathadder V2] Registering RGB controller
+4006229|Info:    [Corsair K65 Mini] Registering RGB controller
+4006229|Info:    ------------------------------------------------------
+4006229|Info:    |            Detecting libusb HID devices            |
+4006229|Info:    ------------------------------------------------------
+4006283|Info:    ------------------------------------------------------
+4006283|Info:    |              Detecting other devices               |
+4006283|Info:    ------------------------------------------------------
+4006298|Info:    [ResourceManager] Calling Post-detection callbacks
+4006298|Info:    ------------------------------------------------------
+4006298|Info:    |                Detection completed                 |
+4006298|Info:    ------------------------------------------------------
+4006298|Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+4011589|Info:    [NetworkServer] Closing server connection: 127.0.0.1
+4011589|Info:    [NetworkServer] Closing server connection: 127.0.0.1
+4011589|Info:    [NetworkServer] Connection thread closed
+4011589|ERROR:   [NetworkServer] recv_select failed receiving magic, closing listener
+4011589|ERROR:   [NetworkServer] recv_select failed receiving magic, closing listener
+4018230|Info:    [ResourceManager] Initializing HID interfaces: Success
+4018230|Info:    ------------------------------------------------------
+4018230|Info:    |               Start device detection               |
+4018230|Info:    ------------------------------------------------------
+4018244|Info:    ------------------------------------------------------
+4018244|Info:    |             Detecting I2C interfaces               |
+4018244|Info:    ------------------------------------------------------
+4018244|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 1022:790B Subsystem: 1025:151E
+4018244|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1002:1638 Subsystem: 1025:151E
+4018244|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+4018244|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+4018244|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:1F9D Subsystem: 1025:151E
+4018245|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 1022:790B Subsystem: 1025:151E
+4018245|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+4018245|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 0000:0000 Subsystem: 0000:0000
+4018245|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+4018245|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ELAN050A:00 Device 0000:0000 Subsystem: 0000:0000
+4018245|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:1F9D Subsystem: 1025:151E
+4018245|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 1022:790B Subsystem: 1025:151E
+4018245|Info:    ------------------------------------------------------
+4018245|Info:    |               Detecting I2C devices                |
+4018245|Info:    ------------------------------------------------------
+4019322|Info:    ------------------------------------------------------
+4019322|Info:    |            Detecting I2C DIMM modules              |
+4019322|Info:    ------------------------------------------------------
+4019709|Info:    [ResourceManager] Detected occupied slot 1, bus 0, type DDR4
+4020354|Info:    [ResourceManager] Detected occupied slot 2, bus 0, type DDR4
+4021045|Info:    [ResourceManager] Detected occupied slot 1, bus 9, type FPM
+4021174|Info:    [ResourceManager] Detected occupied slot 2, bus 9, type FPM
+4021174|Info:    ------------------------------------------------------
+4021174|Info:    |               Detecting I2C PCI devices            |
+4021174|Info:    ------------------------------------------------------
+4021176|Info:    ------------------------------------------------------
+4021176|Info:    |               Detecting HID devices                |
+4021176|Info:    ------------------------------------------------------
+4021205|Info:    [Razer Deathadder V2] Registering RGB controller
+4021258|Info:    [Corsair K65 Mini] Registering RGB controller
+4021258|Info:    ------------------------------------------------------
+4021258|Info:    |            Detecting libusb HID devices            |
+4021258|Info:    ------------------------------------------------------
+4021312|Info:    ------------------------------------------------------
+4021312|Info:    |              Detecting other devices               |
+4021312|Info:    ------------------------------------------------------
+4021331|Info:    [ResourceManager] Calling Post-detection callbacks
+4021331|Info:    ------------------------------------------------------
+4021331|Info:    |                Detection completed                 |
+4021331|Info:    ------------------------------------------------------
+4021331|Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+5674292|Info:    [ResourceManager] Initializing HID interfaces: Success
+5674292|Info:    ------------------------------------------------------
+5674292|Info:    |               Start device detection               |
+5674292|Info:    ------------------------------------------------------
+5674306|Info:    ------------------------------------------------------
+5674306|Info:    |             Detecting I2C interfaces               |
+5674306|Info:    ------------------------------------------------------
+5674306|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 1022:790B Subsystem: 1025:151E
+5674307|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1002:1638 Subsystem: 1025:151E
+5674307|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+5674307|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+5674307|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:1F9D Subsystem: 1025:151E
+5674307|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 1022:790B Subsystem: 1025:151E
+5674307|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+5674307|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 0000:0000 Subsystem: 0000:0000
+5674307|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+5674307|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ELAN050A:00 Device 0000:0000 Subsystem: 0000:0000
+5674307|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:1F9D Subsystem: 1025:151E
+5674307|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 1022:790B Subsystem: 1025:151E
+5674307|Info:    ------------------------------------------------------
+5674307|Info:    |               Detecting I2C devices                |
+5674307|Info:    ------------------------------------------------------
+5675385|Info:    ------------------------------------------------------
+5675385|Info:    |            Detecting I2C DIMM modules              |
+5675385|Info:    ------------------------------------------------------
+5675772|Info:    [ResourceManager] Detected occupied slot 1, bus 0, type DDR4
+5676419|Info:    [ResourceManager] Detected occupied slot 2, bus 0, type DDR4
+5677111|Info:    [ResourceManager] Detected occupied slot 1, bus 9, type FPM
+5677240|Info:    [ResourceManager] Detected occupied slot 2, bus 9, type FPM
+5677240|Info:    ------------------------------------------------------
+5677240|Info:    |               Detecting I2C PCI devices            |
+5677240|Info:    ------------------------------------------------------
+5677242|Info:    ------------------------------------------------------
+5677242|Info:    |               Detecting HID devices                |
+5677242|Info:    ------------------------------------------------------
+5677274|Info:    [Razer Deathadder V2] Registering RGB controller
+5677327|Info:    [Corsair K65 Mini] Registering RGB controller
+5677327|Info:    ------------------------------------------------------
+5677327|Info:    |            Detecting libusb HID devices            |
+5677327|Info:    ------------------------------------------------------
+5677381|Info:    ------------------------------------------------------
+5677381|Info:    |              Detecting other devices               |
+5677381|Info:    ------------------------------------------------------
+5677397|Info:    [ResourceManager] Calling Post-detection callbacks
+5677397|Info:    ------------------------------------------------------
+5677397|Info:    |                Detection completed                 |
+5677397|Info:    ------------------------------------------------------
+5677397|Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+5698328|Info:    [ResourceManager] Initializing HID interfaces: Success
+5698329|Info:    ------------------------------------------------------
+5698329|Info:    |               Start device detection               |
+5698329|Info:    ------------------------------------------------------
+5698343|Info:    ------------------------------------------------------
+5698343|Info:    |             Detecting I2C interfaces               |
+5698343|Info:    ------------------------------------------------------
+5698343|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 1022:790B Subsystem: 1025:151E
+5698343|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1002:1638 Subsystem: 1025:151E
+5698343|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+5698343|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+5698343|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:1F9D Subsystem: 1025:151E
+5698343|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 1022:790B Subsystem: 1025:151E
+5698343|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+5698343|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 0000:0000 Subsystem: 0000:0000
+5698344|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+5698344|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ELAN050A:00 Device 0000:0000 Subsystem: 0000:0000
+5698344|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:1F9D Subsystem: 1025:151E
+5698344|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 1022:790B Subsystem: 1025:151E
+5698344|Info:    ------------------------------------------------------
+5698344|Info:    |               Detecting I2C devices                |
+5698344|Info:    ------------------------------------------------------
+5699422|Info:    ------------------------------------------------------
+5699422|Info:    |            Detecting I2C DIMM modules              |
+5699422|Info:    ------------------------------------------------------
+5699810|Info:    [ResourceManager] Detected occupied slot 1, bus 0, type DDR4
+5700455|Info:    [ResourceManager] Detected occupied slot 2, bus 0, type DDR4
+5701146|Info:    [ResourceManager] Detected occupied slot 1, bus 9, type FPM
+5701275|Info:    [ResourceManager] Detected occupied slot 2, bus 9, type FPM
+5701275|Info:    ------------------------------------------------------
+5701275|Info:    |               Detecting I2C PCI devices            |
+5701275|Info:    ------------------------------------------------------
+5701277|Info:    ------------------------------------------------------
+5701277|Info:    |               Detecting HID devices                |
+5701277|Info:    ------------------------------------------------------
+5701308|Info:    [Razer Deathadder V2] Registering RGB controller
+5701361|Info:    [Corsair K65 Mini] Registering RGB controller
+5701361|Info:    ------------------------------------------------------
+5701361|Info:    |            Detecting libusb HID devices            |
+5701361|Info:    ------------------------------------------------------
+5701415|Info:    ------------------------------------------------------
+5701415|Info:    |              Detecting other devices               |
+5701415|Info:    ------------------------------------------------------
+5701432|Info:    [ResourceManager] Calling Post-detection callbacks
+5701432|Info:    ------------------------------------------------------
+5701432|Info:    |                Detection completed                 |
+5701432|Info:    ------------------------------------------------------
+5701432|Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>

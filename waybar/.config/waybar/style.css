@@ -1,0 +1,125 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+/* Definição de Cores Kanagawa Dragon */
+@define-color dark1         #0d0c0c;
+@define-color cinzapadrao   rgba(18, 18, 15, 0.75); /* Sumi Ink 1 com transparência */
+@define-color fundo         #1D1C19;               /* Sumi Ink 2 para pílulas */
+@define-color branco-sujo   #c5c9c5;               /* Dragon White */
+@define-color dragon-gray   #a6a69c;               /* Dragon Gray */
+@define-color dragon-blue   #658594;               /* Dragon Blue para destaque */
+
+window#waybar {
+    background-color: @cinzapadrao;
+    color: @branco-sujo;
+}
+
+/* =============================================================================
+ * Estilização de Módulos (Base)
+ * ============================================================================= */
+
+/* Estilo compartilhado para pílulas e grupos */
+#window,
+#clock,
+#tray,
+#control {
+    background-color: @fundo;
+    color: @branco-sujo;
+    padding: 0px 10px;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Módulo Control mantendo a mesma lógica */
+#window{
+    background-color: @fundo;
+    color: @branco-sujo;
+    margin: 0px 30px;
+}
+
+#tray{
+    background-color: @fundo;
+    color: @branco-sujo;
+    margin: 0px 10px;
+}
+
+
+#hardware {
+  padding-left:10px;
+  background-color: @fundo;
+  color: @branco-sujo;
+}
+
+/* Remove o fundo de módulos que ficam dentro de grupos (evita fundo duplo) */
+
+/* =============================================================================
+ * Workspaces (Áreas de Trabalho)
+ * ============================================================================= */
+#workspaces {
+    background-color: @fundo;
+    color: @branco-sujo;
+    padding: 0px;
+    transition: all 0.3s ease;
+}
+
+#workspaces button {
+    color: @dragon-gray;
+    padding: 0 6px;
+    transition: background 0.2s ease;
+}
+
+#workspaces button.active {
+    background-color: @branco-sujo;
+    color: @dark1;
+}
+
+#workspaces button.urgent {
+    background-color: #c4746e; /* Dragon Red */
+    color: @dark1;
+}
+
+#workspaces button:hover {
+    background-color: rgba(197, 201, 197, 0.1);
+    box-shadow: inherit;
+    text-shadow: inherit;
+    color: @branco-sujo;
+}
+
+/* =============================================================================
+ * Ícones e Widgets Internos (Direita/Esquerda)
+ * ============================================================================= */
+
+/* Ajuste fino para os ícones individuais não ficarem colados */
+#battery, 
+#pulseaudio, 
+#network, 
+#bluetooth, 
+#cpu, 
+#memory, 
+#backlight,
+#custom-power {
+    padding: 0 6px;
+}
+
+/* Estilo específico para o Relógio */
+#clock {
+    font-weight: 900;
+    color: @branco-sujo; /* Pequeno destaque no relógio */
+}
+
+
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}

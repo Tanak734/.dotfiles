@@ -1,0 +1,94 @@
+{
+    "Effects": [
+        {
+            "AllowOnlyFirst": false,
+            "AutoStart": true,
+            "Brightness": 100,
+            "ControllerZones": [
+                {
+                    "description": "Corsair K65 Mini Keyboard Device",
+                    "is_segment": false,
+                    "location": "HID: /dev/hidraw2",
+                    "name": "Corsair K65 Mini",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "F50019045FFD79ABAA1788460401100B",
+                    "vendor": "Corsair",
+                    "version": "",
+                    "zone_idx": 0
+                }
+            ],
+            "CustomName": "",
+            "CustomSettings": {
+                "groups": [
+                    {
+                        "composer_fn": 0,
+                        "layers": [
+                            {
+                                "composer_fn": 1,
+                                "effect_settings": {
+                                    "AllowOnlyFirst": false,
+                                    "Brightness": 100,
+                                    "CustomName": "",
+                                    "CustomSettings": {
+                                        "h": 0.7000000000000004,
+                                        "invert_colors": true,
+                                        "w": 0.8599999999999999,
+                                        "x": 0.09999999999999999,
+                                        "y": 0.05
+                                    },
+                                    "EffectClassName": "Mask",
+                                    "FPS": 60,
+                                    "RandomColors": false,
+                                    "Slider2Val": 1,
+                                    "Speed": 1,
+                                    "Temperature": 0,
+                                    "Tint": 0,
+                                    "UserColors": [
+                                        2763309,
+                                        3907327
+                                    ]
+                                }
+                            },
+                            {
+                                "composer_fn": 8,
+                                "effect_settings": {
+                                    "AllowOnlyFirst": false,
+                                    "Brightness": 100,
+                                    "CustomName": "",
+                                    "CustomSettings": {
+                                        "backColorBrightness": 50,
+                                        "backgroundColors": 16777215,
+                                        "fadeInSpeed": 54,
+                                        "fadeOutSpeed": 100,
+                                        "starColors": [
+                                            85
+                                        ],
+                                        "starDensity": 10,
+                                        "starOnTime": 100
+                                    },
+                                    "EffectClassName": "StarryNight",
+                                    "FPS": 60,
+                                    "RandomColors": false,
+                                    "Slider2Val": 1,
+                                    "Speed": 50,
+                                    "Temperature": 0,
+                                    "Tint": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "EffectClassName": "Layers",
+            "FPS": 60,
+            "RandomColors": false,
+            "Slider2Val": 1,
+            "Speed": 1,
+            "Temperature": 0,
+            "Tint": 0
+        }
+    ],
+    "version": 2
+}

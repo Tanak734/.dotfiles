@@ -1,0 +1,58 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px; /* Reduzido levemente para ganhar espaço */
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+/* --- Padronização das Pílulas --- */
+
+#hardware, #control, #workspaces {
+    background-color: rgba(20, 20, 20, 0.7);
+    color: #ffffff;
+    border-radius: 8px;
+    margin: 4px 2px; /* Margem externa reduzida (topo/baixo e lados) */
+    padding: 0px 6px; /* Padding interno equilibrado */
+    transition: all 0.3s ease;
+}
+
+#clock, #tray {
+
+    background-color: rgba(20, 20, 20, 0.7);
+    color: #ffffff;
+    border-radius: 8px;
+    margin: 4px 2px; /* Margem externa reduzida (topo/baixo e lados) */
+    padding: 0px 10px; 
+}
+/* --- Ajustes dos Workspaces --- */
+#workspaces button {
+    color: #ffffff;
+    padding: 0px 4px;
+    margin: 5px 1px;
+    border-radius: 5px;
+}
+
+#workspaces button.active {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+#workspaces button:hover {
+    background-color: red;
+    color: white;
+}
+
+/* --- Ajustes dos Módulos da Direita --- */
+/* Remove paddings extras de widgets internos para não "esticar" a pílula */
+
+/* Se houver algum botão ou ícone de estado (como bateria/bluetooth) */
+#battery, #pulseaudio, #network, #custom-separator, #bluetooth, #cpu, #memory, #custom-power, #backlight {
+    padding: 0 3px;
+}
+

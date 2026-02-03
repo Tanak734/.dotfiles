@@ -1,0 +1,89 @@
+{
+    "Effects": [
+        {
+            "AllowOnlyFirst": false,
+            "AutoStart": true,
+            "Brightness": 100,
+            "ControllerZones": [
+                {
+                    "description": "Corsair K65 Mini Keyboard Device",
+                    "is_segment": false,
+                    "location": "HID: /dev/hidraw7",
+                    "name": "Corsair K65 Mini",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "F50019045FFD79ABAA1788460401100B",
+                    "vendor": "Corsair",
+                    "version": "",
+                    "zone_idx": 0
+                }
+            ],
+            "CustomName": "",
+            "CustomSettings": {
+                "groups": [
+                    {
+                        "composer_fn": 0,
+                        "layers": [
+                            {
+                                "composer_fn": 5,
+                                "effect_settings": {
+                                    "AllowOnlyFirst": false,
+                                    "Brightness": 100,
+                                    "CustomName": "",
+                                    "CustomSettings": {
+                                        "backColorBrightness": 50,
+                                        "backgroundColors": 0,
+                                        "fadeInSpeed": 64,
+                                        "fadeOutSpeed": 59,
+                                        "starColors": [
+                                            65535,
+                                            22015
+                                        ],
+                                        "starDensity": 42,
+                                        "starOnTime": 50
+                                    },
+                                    "EffectClassName": "StarryNight",
+                                    "FPS": 60,
+                                    "RandomColors": false,
+                                    "Slider2Val": 1,
+                                    "Speed": 50,
+                                    "Temperature": 0,
+                                    "Tint": 0
+                                }
+                            },
+                            {
+                                "composer_fn": 1,
+                                "effect_settings": {
+                                    "AllowOnlyFirst": false,
+                                    "Brightness": 100,
+                                    "CustomName": "",
+                                    "CustomSettings": {
+                                        "colors": [
+                                            170
+                                        ]
+                                    },
+                                    "EffectClassName": "Breathing",
+                                    "FPS": 60,
+                                    "RandomColors": false,
+                                    "Slider2Val": 1,
+                                    "Speed": 10,
+                                    "Temperature": 0,
+                                    "Tint": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "EffectClassName": "Layers",
+            "FPS": 60,
+            "RandomColors": false,
+            "Slider2Val": 1,
+            "Speed": 1,
+            "Temperature": 0,
+            "Tint": 0
+        }
+    ],
+    "version": 2
+}

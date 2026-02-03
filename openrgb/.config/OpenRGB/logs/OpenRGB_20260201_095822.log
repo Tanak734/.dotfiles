@@ -1,0 +1,423 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260201_095822
+====================================================================================================
+
+0     |Info:    [ProfileManager] Found file: teste.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for teste
+53    |Info:    [ResourceManager] Initializing HID interfaces: Success
+53    |Info:    ------------------------------------------------------
+53    |Info:    |               Start device detection               |
+53    |Info:    ------------------------------------------------------
+68    |Info:    ------------------------------------------------------
+69    |Info:    |             Detecting I2C interfaces               |
+69    |Info:    ------------------------------------------------------
+69    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 1022:790B Subsystem: 1025:151E
+69    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1002:1638 Subsystem: 1025:151E
+69    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+72    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+72    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:1F9D Subsystem: 1025:151E
+72    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 1022:790B Subsystem: 1025:151E
+72    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+72    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 0000:0000 Subsystem: 0000:0000
+72    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+72    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ELAN050A:00 Device 0000:0000 Subsystem: 0000:0000
+73    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:1F9D Subsystem: 1025:151E
+73    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 1022:790B Subsystem: 1025:151E
+73    |Info:    ------------------------------------------------------
+73    |Info:    |               Detecting I2C devices                |
+73    |Info:    ------------------------------------------------------
+1155  |Info:    ------------------------------------------------------
+1155  |Info:    |            Detecting I2C DIMM modules              |
+1155  |Info:    ------------------------------------------------------
+1545  |Info:    [ResourceManager] Detected occupied slot 1, bus 0, type DDR4
+2191  |Info:    [ResourceManager] Detected occupied slot 2, bus 0, type DDR4
+2886  |Info:    [ResourceManager] Detected occupied slot 1, bus 9, type FPM
+3016  |Info:    [ResourceManager] Detected occupied slot 2, bus 9, type FPM
+3016  |Info:    ------------------------------------------------------
+3016  |Info:    |               Detecting I2C PCI devices            |
+3016  |Info:    ------------------------------------------------------
+3017  |Info:    ------------------------------------------------------
+3017  |Info:    |               Detecting HID devices                |
+3017  |Info:    ------------------------------------------------------
+3045  |Info:    [Razer Deathadder V2] Registering RGB controller
+3045  |Info:    ------------------------------------------------------
+3045  |Info:    |            Detecting libusb HID devices            |
+3045  |Info:    ------------------------------------------------------
+3109  |Info:    ------------------------------------------------------
+3109  |Info:    |              Detecting other devices               |
+3109  |Info:    ------------------------------------------------------
+3151  |Info:    [ResourceManager] Calling Post-detection callbacks
+3151  |Info:    ------------------------------------------------------
+3151  |Info:    |                Detection completed                 |
+3151  |Info:    ------------------------------------------------------
+3151  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+4847  |Info:    [ResourceManager] Initializing HID interfaces: Success
+4847  |Info:    ------------------------------------------------------
+4847  |Info:    |               Start device detection               |
+4847  |Info:    ------------------------------------------------------
+4859  |Info:    ------------------------------------------------------
+4859  |Info:    |             Detecting I2C interfaces               |
+4859  |Info:    ------------------------------------------------------
+4859  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 1022:790B Subsystem: 1025:151E
+4859  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1002:1638 Subsystem: 1025:151E
+4859  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+4859  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+4859  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:1F9D Subsystem: 1025:151E
+4860  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 1022:790B Subsystem: 1025:151E
+4860  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+4860  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 0000:0000 Subsystem: 0000:0000
+4860  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+4860  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ELAN050A:00 Device 0000:0000 Subsystem: 0000:0000
+4860  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:1F9D Subsystem: 1025:151E
+4860  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 1022:790B Subsystem: 1025:151E
+4860  |Info:    ------------------------------------------------------
+4860  |Info:    |               Detecting I2C devices                |
+4860  |Info:    ------------------------------------------------------
+5938  |Info:    ------------------------------------------------------
+5938  |Info:    |            Detecting I2C DIMM modules              |
+5938  |Info:    ------------------------------------------------------
+6327  |Info:    [ResourceManager] Detected occupied slot 1, bus 0, type DDR4
+6977  |Info:    [ResourceManager] Detected occupied slot 2, bus 0, type DDR4
+7669  |Info:    [ResourceManager] Detected occupied slot 1, bus 9, type FPM
+7798  |Info:    [ResourceManager] Detected occupied slot 2, bus 9, type FPM
+7798  |Info:    ------------------------------------------------------
+7798  |Info:    |               Detecting I2C PCI devices            |
+7798  |Info:    ------------------------------------------------------
+7801  |Info:    ------------------------------------------------------
+7801  |Info:    |               Detecting HID devices                |
+7801  |Info:    ------------------------------------------------------
+7833  |Info:    [Razer Deathadder V2] Registering RGB controller
+7833  |Info:    ------------------------------------------------------
+7833  |Info:    |            Detecting libusb HID devices            |
+7833  |Info:    ------------------------------------------------------
+7882  |Info:    ------------------------------------------------------
+7882  |Info:    |              Detecting other devices               |
+7882  |Info:    ------------------------------------------------------
+7898  |Info:    [ResourceManager] Calling Post-detection callbacks
+7898  |Info:    ------------------------------------------------------
+7898  |Info:    |                Detection completed                 |
+7898  |Info:    ------------------------------------------------------
+7898  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+115759|Info:    [ResourceManager] Initializing HID interfaces: Success
+115759|Info:    ------------------------------------------------------
+115759|Info:    |               Start device detection               |
+115759|Info:    ------------------------------------------------------
+115773|Info:    ------------------------------------------------------
+115773|Info:    |             Detecting I2C interfaces               |
+115773|Info:    ------------------------------------------------------
+115773|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 1022:790B Subsystem: 1025:151E
+115773|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1002:1638 Subsystem: 1025:151E
+115773|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+115773|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+115773|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:1F9D Subsystem: 1025:151E
+115773|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 1022:790B Subsystem: 1025:151E
+115773|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+115773|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 0000:0000 Subsystem: 0000:0000
+115773|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+115774|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ELAN050A:00 Device 0000:0000 Subsystem: 0000:0000
+115774|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:1F9D Subsystem: 1025:151E
+115774|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 1022:790B Subsystem: 1025:151E
+115774|Info:    ------------------------------------------------------
+115774|Info:    |               Detecting I2C devices                |
+115774|Info:    ------------------------------------------------------
+116853|Info:    ------------------------------------------------------
+116853|Info:    |            Detecting I2C DIMM modules              |
+116853|Info:    ------------------------------------------------------
+117242|Info:    [ResourceManager] Detected occupied slot 1, bus 0, type DDR4
+117889|Info:    [ResourceManager] Detected occupied slot 2, bus 0, type DDR4
+118583|Info:    [ResourceManager] Detected occupied slot 1, bus 9, type FPM
+118713|Info:    [ResourceManager] Detected occupied slot 2, bus 9, type FPM
+118713|Info:    ------------------------------------------------------
+118713|Info:    |               Detecting I2C PCI devices            |
+118713|Info:    ------------------------------------------------------
+118716|Info:    ------------------------------------------------------
+118716|Info:    |               Detecting HID devices                |
+118716|Info:    ------------------------------------------------------
+118748|Info:    [Razer Deathadder V2] Registering RGB controller
+118799|Info:    [Corsair K65 Mini] Registering RGB controller
+118799|Info:    ------------------------------------------------------
+118799|Info:    |            Detecting libusb HID devices            |
+118799|Info:    ------------------------------------------------------
+118853|Info:    ------------------------------------------------------
+118853|Info:    |              Detecting other devices               |
+118853|Info:    ------------------------------------------------------
+118869|Info:    [ResourceManager] Calling Post-detection callbacks
+118869|Info:    ------------------------------------------------------
+118869|Info:    |                Detection completed                 |
+118869|Info:    ------------------------------------------------------
+118869|Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+139989|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+139989|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+156435|Info:    [ProfileManager] Found file: teste.orp attempting to validate header
+156435|Info:    [ProfileManager] Valid v5 profile found for teste
+157953|Info:    [ProfileManager] Found file: teste.orp attempting to validate header
+157953|Info:    [ProfileManager] Valid v5 profile found for teste
+158112|Info:    [ProfileManager] Found file: teste.orp attempting to validate header
+158112|Info:    [ProfileManager] Valid v5 profile found for teste
+158577|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+158577|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+158789|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+158789|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+158967|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+158967|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+177409|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+177409|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+177591|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+177591|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+186299|Info:    [ProfileManager] Found file: teste.orp attempting to validate header
+186299|Info:    [ProfileManager] Valid v5 profile found for teste
+188392|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+188392|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+188672|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+188672|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+188812|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+188812|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+188967|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+188968|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+189116|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+189116|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+197875|Info:    [ProfileManager] Found file: teste.orp attempting to validate header
+197875|Info:    [ProfileManager] Valid v5 profile found for teste
+198046|Info:    [ProfileManager] Found file: teste.orp attempting to validate header
+198046|Info:    [ProfileManager] Valid v5 profile found for teste
+199042|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+199042|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+199190|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+199190|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+199344|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+199344|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+199503|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+199503|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+199652|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+199652|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+212980|Info:    [ProfileManager] Found file: teste.orp attempting to validate header
+212980|Info:    [ProfileManager] Valid v5 profile found for teste
+214492|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+214492|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+214960|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+214960|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+215123|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+215123|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+215287|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+215287|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw7
+256803|Info:    [ResourceManager] Initializing HID interfaces: Success
+256803|Info:    ------------------------------------------------------
+256804|Info:    |               Start device detection               |
+256804|Info:    ------------------------------------------------------
+256818|Info:    ------------------------------------------------------
+256818|Info:    |             Detecting I2C interfaces               |
+256818|Info:    ------------------------------------------------------
+256818|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 1022:790B Subsystem: 1025:151E
+256818|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1002:1638 Subsystem: 1025:151E
+256818|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+256818|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+256818|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:1F9D Subsystem: 1025:151E
+256818|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 1022:790B Subsystem: 1025:151E
+256818|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+256818|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 0000:0000 Subsystem: 0000:0000
+256818|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+256819|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ELAN050A:00 Device 0000:0000 Subsystem: 0000:0000
+256819|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:1F9D Subsystem: 1025:151E
+256819|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 1022:790B Subsystem: 1025:151E
+256819|Info:    ------------------------------------------------------
+256819|Info:    |               Detecting I2C devices                |
+256819|Info:    ------------------------------------------------------
+257899|Info:    ------------------------------------------------------
+257899|Info:    |            Detecting I2C DIMM modules              |
+257899|Info:    ------------------------------------------------------
+258288|Info:    [ResourceManager] Detected occupied slot 1, bus 0, type DDR4
+258938|Info:    [ResourceManager] Detected occupied slot 2, bus 0, type DDR4
+259632|Info:    [ResourceManager] Detected occupied slot 1, bus 9, type FPM
+259761|Info:    [ResourceManager] Detected occupied slot 2, bus 9, type FPM
+259761|Info:    ------------------------------------------------------
+259761|Info:    |               Detecting I2C PCI devices            |
+259761|Info:    ------------------------------------------------------
+259763|Info:    ------------------------------------------------------
+259763|Info:    |               Detecting HID devices                |
+259763|Info:    ------------------------------------------------------
+259796|Info:    [Razer Deathadder V2] Registering RGB controller
+259849|Info:    [Corsair K65 Mini] Registering RGB controller
+259849|Info:    ------------------------------------------------------
+259849|Info:    |            Detecting libusb HID devices            |
+259849|Info:    ------------------------------------------------------
+259902|Info:    ------------------------------------------------------
+259902|Info:    |              Detecting other devices               |
+259902|Info:    ------------------------------------------------------
+259918|Info:    [ResourceManager] Calling Post-detection callbacks
+259918|Info:    ------------------------------------------------------
+259918|Info:    |                Detection completed                 |
+259918|Info:    ------------------------------------------------------
+259918|Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+264362|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+264362|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+277700|Info:    [NetworkServer] Network connection thread started on port 6742
+283690|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+283690|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+283916|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+283916|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+284108|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+284108|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+284257|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+284257|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+284431|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+284431|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+292368|Info:    [ProfileManager] Found file: teste.orp attempting to validate header
+292368|Info:    [ProfileManager] Valid v5 profile found for teste
+292541|Info:    [ProfileManager] Found file: teste.orp attempting to validate header
+292541|Info:    [ProfileManager] Valid v5 profile found for teste
+293116|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+293116|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+293283|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+293283|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+293428|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+293428|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+293729|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+293729|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+294047|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+294047|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+294203|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+294203|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+297120|Info:    [NetworkServer] Network server started
+301850|Info:    [ResourceManager] Initializing HID interfaces: Success
+301850|Info:    ------------------------------------------------------
+301850|Info:    |               Start device detection               |
+301850|Info:    ------------------------------------------------------
+301865|Info:    ------------------------------------------------------
+301865|Info:    |             Detecting I2C interfaces               |
+301865|Info:    ------------------------------------------------------
+301866|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 1022:790B Subsystem: 1025:151E
+301866|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1002:1638 Subsystem: 1025:151E
+301866|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+301866|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+301866|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:1F9D Subsystem: 1025:151E
+301866|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 1022:790B Subsystem: 1025:151E
+301866|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+301866|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 0000:0000 Subsystem: 0000:0000
+301866|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+301866|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ELAN050A:00 Device 0000:0000 Subsystem: 0000:0000
+301866|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:1F9D Subsystem: 1025:151E
+301866|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 1022:790B Subsystem: 1025:151E
+301866|Info:    ------------------------------------------------------
+301866|Info:    |               Detecting I2C devices                |
+301866|Info:    ------------------------------------------------------
+302948|Info:    ------------------------------------------------------
+302948|Info:    |            Detecting I2C DIMM modules              |
+302948|Info:    ------------------------------------------------------
+303338|Info:    [ResourceManager] Detected occupied slot 1, bus 0, type DDR4
+303986|Info:    [ResourceManager] Detected occupied slot 2, bus 0, type DDR4
+304686|Info:    [ResourceManager] Detected occupied slot 1, bus 9, type FPM
+304815|Info:    [ResourceManager] Detected occupied slot 2, bus 9, type FPM
+304815|Info:    ------------------------------------------------------
+304815|Info:    |               Detecting I2C PCI devices            |
+304815|Info:    ------------------------------------------------------
+304818|Info:    ------------------------------------------------------
+304818|Info:    |               Detecting HID devices                |
+304818|Info:    ------------------------------------------------------
+304850|Info:    [Razer Deathadder V2] Registering RGB controller
+304902|Info:    [Corsair K65 Mini] Registering RGB controller
+304902|Info:    ------------------------------------------------------
+304902|Info:    |            Detecting libusb HID devices            |
+304902|Info:    ------------------------------------------------------
+304956|Info:    ------------------------------------------------------
+304956|Info:    |              Detecting other devices               |
+304956|Info:    ------------------------------------------------------
+304972|Info:    [ResourceManager] Calling Post-detection callbacks
+304972|Info:    ------------------------------------------------------
+304972|Info:    |                Detection completed                 |
+304972|Info:    ------------------------------------------------------
+304972|Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+306310|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+306310|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+306310|Info:    [ProfileManager] Profile loading: FAILED! for Razer Deathadder V2 @ HID: /dev/hidraw2
+306310|Info:    [ProfileManager] Profile loading: FAILED! for Corsair K65 Mini @ HID: /dev/hidraw8
+306521|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+306521|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+306521|Info:    [ProfileManager] Profile loading: FAILED! for Razer Deathadder V2 @ HID: /dev/hidraw2
+306521|Info:    [ProfileManager] Profile loading: FAILED! for Corsair K65 Mini @ HID: /dev/hidraw8
+307020|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+307020|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+307020|Info:    [ProfileManager] Profile loading: FAILED! for Razer Deathadder V2 @ HID: /dev/hidraw2
+307020|Info:    [ProfileManager] Profile loading: FAILED! for Corsair K65 Mini @ HID: /dev/hidraw8
+308319|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+308319|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+308319|Info:    [ProfileManager] Profile loading: FAILED! for Razer Deathadder V2 @ HID: /dev/hidraw2
+308319|Info:    [ProfileManager] Profile loading: FAILED! for Corsair K65 Mini @ HID: /dev/hidraw8
+308497|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+308497|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+308497|Info:    [ProfileManager] Profile loading: FAILED! for Razer Deathadder V2 @ HID: /dev/hidraw2
+308497|Info:    [ProfileManager] Profile loading: FAILED! for Corsair K65 Mini @ HID: /dev/hidraw8
+308656|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+308656|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+308656|Info:    [ProfileManager] Profile loading: FAILED! for Razer Deathadder V2 @ HID: /dev/hidraw2
+308656|Info:    [ProfileManager] Profile loading: FAILED! for Corsair K65 Mini @ HID: /dev/hidraw8
+309213|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+309213|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+309213|Info:    [ProfileManager] Profile loading: FAILED! for Razer Deathadder V2 @ HID: /dev/hidraw2
+309213|Info:    [ProfileManager] Profile loading: FAILED! for Corsair K65 Mini @ HID: /dev/hidraw8
+310814|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+310814|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+310814|Info:    [ProfileManager] Profile loading: FAILED! for Razer Deathadder V2 @ HID: /dev/hidraw2
+310814|Info:    [ProfileManager] Profile loading: FAILED! for Corsair K65 Mini @ HID: /dev/hidraw8
+313904|Info:    [ResourceManager] Initializing HID interfaces: Success
+313904|Info:    ------------------------------------------------------
+313904|Info:    |               Start device detection               |
+313904|Info:    ------------------------------------------------------
+313918|Info:    ------------------------------------------------------
+313918|Info:    |             Detecting I2C interfaces               |
+313918|Info:    ------------------------------------------------------
+313918|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 1022:790B Subsystem: 1025:151E
+313918|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1002:1638 Subsystem: 1025:151E
+313918|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+313918|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+313918|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:1F9D Subsystem: 1025:151E
+313918|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 1022:790B Subsystem: 1025:151E
+313918|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+313918|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 0000:0000 Subsystem: 0000:0000
+313919|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+313919|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ELAN050A:00 Device 0000:0000 Subsystem: 0000:0000
+313919|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:1F9D Subsystem: 1025:151E
+313919|Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 1022:790B Subsystem: 1025:151E
+313919|Info:    ------------------------------------------------------
+313919|Info:    |               Detecting I2C devices                |
+313919|Info:    ------------------------------------------------------
+315000|Info:    ------------------------------------------------------
+315000|Info:    |            Detecting I2C DIMM modules              |
+315000|Info:    ------------------------------------------------------
+315389|Info:    [ResourceManager] Detected occupied slot 1, bus 0, type DDR4
+316040|Info:    [ResourceManager] Detected occupied slot 2, bus 0, type DDR4
+316738|Info:    [ResourceManager] Detected occupied slot 1, bus 9, type FPM
+316868|Info:    [ResourceManager] Detected occupied slot 2, bus 9, type FPM
+316868|Info:    ------------------------------------------------------
+316868|Info:    |               Detecting I2C PCI devices            |
+316868|Info:    ------------------------------------------------------
+316870|Info:    ------------------------------------------------------
+316870|Info:    |               Detecting HID devices                |
+316870|Info:    ------------------------------------------------------
+316900|Info:    [Razer Deathadder V2] Registering RGB controller
+316952|Info:    [Corsair K65 Mini] Registering RGB controller
+316953|Info:    ------------------------------------------------------
+316953|Info:    |            Detecting libusb HID devices            |
+316953|Info:    ------------------------------------------------------
+317006|Info:    ------------------------------------------------------
+317006|Info:    |              Detecting other devices               |
+317006|Info:    ------------------------------------------------------
+317022|Info:    [ResourceManager] Calling Post-detection callbacks
+317022|Info:    ------------------------------------------------------
+317022|Info:    |                Detection completed                 |
+317022|Info:    ------------------------------------------------------
+317022|Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+317732|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+317732|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+317732|Info:    [ProfileManager] Profile loading: FAILED! for Razer Deathadder V2 @ HID: /dev/hidraw2
+317732|Info:    [ProfileManager] Profile loading: FAILED! for Corsair K65 Mini @ HID: /dev/hidraw8
+319693|Info:    [ProfileManager] Profile loading: Succeeded for Razer Deathadder V2 @ HID: /dev/hidraw2
+319693|Info:    [ProfileManager] Profile loading: Succeeded for Corsair K65 Mini @ HID: /dev/hidraw8
+319693|Info:    [ProfileManager] Profile loading: FAILED! for Razer Deathadder V2 @ HID: /dev/hidraw2
+319693|Info:    [ProfileManager] Profile loading: FAILED! for Corsair K65 Mini @ HID: /dev/hidraw8
+339631|Info:    [ProfileManager] Found file: teste.orp attempting to validate header
+339631|Info:    [ProfileManager] Valid v5 profile found for teste
+350217|Info:    [NetworkServer] Closing server connection: 127.0.0.1
+350217|Info:    [NetworkServer] Connection thread closed
+350223|ERROR:   [NetworkServer] recv_select failed receiving magic, closing listener
+619844|ERROR:   [OpenRGBPluginsPage] Failed to install plugin: filesystem error: cannot copy: No such file or directory [] [/home/tanaka/.config/OpenRGB/plugins/]
