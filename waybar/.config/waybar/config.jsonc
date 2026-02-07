@@ -24,6 +24,9 @@
     "type": "group",
     "orientation": "horizontal",
     "modules": [
+      "memory",
+      "disk",
+      "custom/separator",
       "bluetooth", 
       "custom/separator", 
       "backlight",
@@ -42,13 +45,6 @@
     "type": "group",
     "orientation": "horizontal",
     "modules": [
-      "cpu",
-      "custom/separator",
-      "memory",
-      "custom/separator",
-      "temperature",
-      "custom/separator",
-      "disk"
     ]
   },
 
@@ -197,8 +193,8 @@
  
   "clock": {
     "locale": "C",
-    "format": "{:%H:%M %p | %a %d/%b}",
-    //"format-alt": "{:%a %d/%b}",
+    "format": "{:%H:%M %p}",
+    "format-alt": "{:%a %d/%b}",
     "tooltip-format": "<big>{:%Y %B}</big>\n\n<tt><big>{calendar}</big></tt>",
     "interval": "0"
     },

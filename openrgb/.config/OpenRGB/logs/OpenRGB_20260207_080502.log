@@ -1,0 +1,15 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260207_080502
+====================================================================================================
+
+1     |Info:    [ProfileManager] Found file: teste.orp attempting to validate header
+3     |Info:    [ProfileManager] Valid v5 profile found for teste
+186   |Info:    [ResourceManager] Calling Post-detection callbacks
+186   |Info:    ------------------------------------------------------
+186   |Info:    |                Detection completed                 |
+186   |Info:    ------------------------------------------------------
+21157 |Info:    [ResourceManager] Calling Post-detection callbacks
+21157 |Info:    ------------------------------------------------------
+21157 |Info:    |                Detection completed                 |
+21157 |Info:    ------------------------------------------------------
