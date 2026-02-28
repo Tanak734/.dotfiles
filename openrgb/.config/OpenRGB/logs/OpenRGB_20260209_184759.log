@@ -1,0 +1,53 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20260209_184759
+====================================================================================================
+
+1     |Info:    [ProfileManager] Found file: teste.orp attempting to validate header
+1     |Info:    [ProfileManager] Valid v5 profile found for teste
+1208  |Info:    [ResourceManager] Initializing HID interfaces: Success
+1208  |Info:    ------------------------------------------------------
+1209  |Info:    |               Start device detection               |
+1209  |Info:    ------------------------------------------------------
+1217  |Info:    ------------------------------------------------------
+1218  |Info:    |             Detecting I2C interfaces               |
+1218  |Info:    ------------------------------------------------------
+1218  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 1002:1638 Subsystem: 1025:151E
+1218  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 10DE:1F9D Subsystem: 1025:151E
+1218  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 1022:790B Subsystem: 1025:151E
+1218  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1219  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 0000:0000 Subsystem: 0000:0000
+1219  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:1F9D Subsystem: 1025:151E
+1219  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+1219  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ELAN050A:00 Device 0000:0000 Subsystem: 0000:0000
+1220  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 1022:790B Subsystem: 1025:151E
+1220  |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 1022:790B Subsystem: 1025:151E
+1220  |Info:    ------------------------------------------------------
+1220  |Info:    |               Detecting I2C devices                |
+1220  |Info:    ------------------------------------------------------
+2354  |Info:    ------------------------------------------------------
+2354  |Info:    |            Detecting I2C DIMM modules              |
+2354  |Info:    ------------------------------------------------------
+2535  |Info:    [ResourceManager] Detected occupied slot 1, bus 7, type FPM
+2666  |Info:    [ResourceManager] Detected occupied slot 2, bus 7, type FPM
+3077  |Info:    [ResourceManager] Detected occupied slot 1, bus 8, type DDR4
+3752  |Info:    [ResourceManager] Detected occupied slot 2, bus 8, type DDR4
+4293  |Info:    ------------------------------------------------------
+4293  |Info:    |               Detecting I2C PCI devices            |
+4293  |Info:    ------------------------------------------------------
+4298  |Info:    ------------------------------------------------------
+4298  |Info:    |               Detecting HID devices                |
+4298  |Info:    ------------------------------------------------------
+4298  |Info:    ------------------------------------------------------
+4298  |Info:    |            Detecting libusb HID devices            |
+4298  |Info:    ------------------------------------------------------
+4324  |Info:    ------------------------------------------------------
+4324  |Info:    |              Detecting other devices               |
+4324  |Info:    ------------------------------------------------------
+4365  |Info:    [ResourceManager] Calling Post-detection callbacks
+4365  |Info:    ------------------------------------------------------
+4365  |Info:    |                Detection completed                 |
+4365  |Info:    ------------------------------------------------------
+4365  |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+4365  |Info:    [NetworkServer] Network connection thread started on port 6742
+5183  |Info:    [NetworkServer] Network server started

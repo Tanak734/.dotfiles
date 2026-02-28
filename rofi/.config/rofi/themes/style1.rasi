@@ -17,9 +17,9 @@
 /* 2. Window: A janela principal que envolve tudo */
 window {
     width:            25%;         /* Largura da janela */
-    height:           55%;         /* Altura da janela */
+    height:           65%;         /* Altura da janela */
     background-color: transparent;
-    border:           2px;/* Espessura da borda externa */ 
+    border:           0px;/* Espessura da borda externa */ 
     border-color: white;
     border-radius:    8px;        /* Arredondamento dos cantos */
     padding:          0px;        /* Espaço interno entre borda e conteúdo */
@@ -27,8 +27,9 @@ window {
 
 /* 3. Mainbox: O container vertical que organiza o Inputbar e o Listview */
 mainbox {
-    spacing:          0px;        /* Espaço entre a barra de busca e a lista */
+    spacing:          2px;        /* Espaço entre a barra de busca e a lista */
     children:         [ inputbar, listview, mode-switcher ];
+    background-color: @fg-color;
 }
 
 /* 4. Inputbar: A área onde você digita a busca */

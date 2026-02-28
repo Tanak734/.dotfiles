@@ -186,7 +186,7 @@
     },
     "tooltip-format": "{ifname}",
     "tooltip-format-wifi": "Wi-Fi: {essid} {icon} ({signalStrength}%)\nDownload: ⬇ {bandwidthDownBits} | Upload: ⬆ {bandwidthUpBits}\nIP: {ipaddr}",
-    "tooltip-format-ethernet": "Ethernet\nIP: {ipaddr}",
+    "tooltip-format-ethernet": "Nome:{ifname}\nEthernet\nIP: {ipaddr}",
     "interval": 5,
     "on-click": "kitty -e impala" // Abre gerenciador de rede ao clicar
     },

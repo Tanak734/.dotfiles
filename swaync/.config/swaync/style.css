@@ -1,0 +1,69 @@
+/* Estilo Geral do Painel */
+.control-center {
+    background: rgba(20, 20, 30, 0.95); /* Escuro mas transparente */
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Bordas sutis */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Título e Botões Superiores */
+.widget-title {
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.widget-dnd {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px 10px;
+}
+
+/* As Notificações Individuais */
+.notification {
+    /* background: rgba(45, 45, 60, 0.6); */
+    border-radius: 12px;
+
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.notification:hover {
+    background: rgba(60, 60, 80, 0.8);
+    border: 1px solid #89b4fa; /* Realce ao passar o mouse */
+}
+
+.notification-group {
+  background: transparent;
+}
+
+/* Títulos das notificações */
+.notification-content {
+    margin: 0px;
+    background: transparent;
+}
+
+.notification-default {
+    background: transparent;
+}
+
+/* Botão de Limpar Notificações */
+.widget-title button {
+    color: white;
+    border: 1px gray;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background: rgba(255,255,255,0.2);
+}
+
+.widget-title button:hover {
+    background: rgba(255,255,255,0.5);
+    color: white;
+}
+
+
