@@ -36,8 +36,14 @@ return {
         },
 
         -- Web / JS Runtimes
-        javascript = "node",
-        typescript = "ts-node", -- Requer o pacote ts-node instalado globalmente
+        javascript = {
+          "cd $dir &&",
+          "node $fileName",
+        },
+        typescript = {
+          "cd $dir &&",
+          "ts-node $fileName",
+        },
 
         -- Rust (usando cargo se houver, ou rustc)
         rust = {

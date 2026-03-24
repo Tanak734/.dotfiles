@@ -4,3 +4,6 @@
 
 vim.opt.wrap = true
 vim.opt.linebreak = true
+vim.g.lazyvim_php_lsp = "intelephense" -- ou "phpactor"
+vim.g.lazyvim_ruby_lsp = "ruby_lsp" -- ou "solargraph"
+vim.g.lazyvim_ruby_formatter = "rubocop" -- ou "standardrb"
