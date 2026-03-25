@@ -1,65 +1,52 @@
-# ~/.zshrc
-
-# No Zsh, o arquivo .zshrc só é carregado em sessões interativas por padrão, 
-# então a verificação de "interactive shell" do bash é opcional, mas vamos manter por segurança.
-[[ -o interactive ]] || return
-
-# --- Aliases Básicos ---
-alias ls='eza -a --icons' # Note que este alias sobrescreve o 'ls --color=auto' abaixo
-alias grep='grep --color=auto'
-alias cls="clear"
-
-# --- Variáveis de Ambiente ---
-export JAVA_HOME=/usr/lib/jvm/default
-export PATH=$PATH:$JAVA_HOME/bin
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH=${PATH}:$HOME/.config/composer/vendor/bin/
-
-# --- Rust (Cargo) ---
-[ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
-
-# --- Ruby (rbenv) ---
-# O comando init detecta o shell automaticamente, mas é bom garantir
-eval "$(rbenv init - zsh)"
-
-# --- Conda (Anaconda/Miniconda) ---
-# Ajustado para usar o script compatível com Zsh se disponível
-alias conda_on='source ~/miniconda3/etc/profile.d/conda.sh' 
-# Dica: Se não funcionar, tente: source ~/anaconda3/etc/profile.d/conda.zsh
-
-# --- NVM (Node Version Manager) ---
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
-# IMPORTANTE: O bash_completion não funciona no Zsh. 
-# O Zsh tem seu próprio sistema de completion. 
-# Se você usa Oh My Zsh, basta adicionar 'nvm' na lista de plugins.
-if [ -s "$NVM_DIR/bash_completion" ]; then
-    # Opcional: Carregar suporte de compatibilidade se necessário
-    autoload -U +X compinit && compinit
-    autoload -U +X bashcompinit && bashcompinit
-    source "$NVM_DIR/bash_completion"
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# --- Prompt (Starship) ---
-# ALTERAÇÃO CRÍTICA: Mudamos de 'bash' para 'zsh'
-eval "$(starship init zsh)"
+source /usr/share/cachyos-zsh-config/cachyos-config.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-# --- Adicionando plugins do ZSH ---
-source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.config/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# -------- NVM: lazy load + Node padrão no PATH --------
+# ------------ NVM: carga normal ------------
 
-# Configuração de Histórico (Opcional, mas recomendado)
-HISTFILE=~/.config/zsh/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
-setopt appendhistory sharehistory
+export NVM_DIR="$HOME/.nvm"
 
+# carrega nvm em todo shell (login/interactive)
+if [ -s "$NVM_DIR/nvm.sh" ]; then
+  . "$NVM_DIR/nvm.sh"
+fi
 
-# Completação ignorando case (Maiúsculas/Minúsculas)
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+# auto-completion opcional
+if [ -s "$NVM_DIR/bash_completion" ]; then
+  . "$NVM_DIR/bash_completion"
+fi
 
-# Isso garante que se você digitar 'mkdir PastaNova', 
-# o diretório será criado exatamente com o 'P' e 'N' maiúsculos.
+# ------------ Conda: lazy load ------------
+_conda_lazy_init() {
+  local CONDA_SH="$HOME/miniconda3/etc/profile.d/conda.sh"
+  if [ -f "$CONDA_SH" ]; then
+    . "$CONDA_SH"
+  else
+    echo "conda.sh não encontrado em $CONDA_SH"
+    return 1
+  fi
+}
+
+conda() {
+  unset -f conda
+  _conda_lazy_init
+  conda "$@"
+}
+
+# Se quiser, você pode descomentar este alias para ativar conda com um comando próprio:
+# alias ativar-conda='_conda_lazy_init'
+
+# ------------ PATH extra ------------
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
